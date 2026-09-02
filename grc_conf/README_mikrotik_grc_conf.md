@@ -4,6 +4,10 @@
 ![GRC Required](https://img.shields.io/badge/Dependency-GRC-orange.svg)
 ![RouterOS Compatibility](https://img.shields.io/badge/RouterOS-v6%20%7C%20v7-blueviolet.svg)  
 ![Syslog Compatible](https://img.shields.io/badge/Syslog-Compatible-00599C?style=flat&logo=syslog-ng)
+![macOS](https://img.shields.io/badge/macOS-Supported-success?logo=apple)
+![Linux](https://img.shields.io/badge/Linux-Supported-success?logo=linux)
+![Unix](https://img.shields.io/badge/Unix-Supported-success?logo=unix)
+![Windows](https://img.shields.io/badge/Windows-WSL%2FCygwin-informational?logo=windows)
 
 A custom **Generic Colorizer (`grc`)** configuration file (`conf.mikrotik`) for colorizing live MikroTik RouterOS syslog streams and log files in the terminal.
 
@@ -17,6 +21,30 @@ It highlights hostnames, IP/MAC addresses, severe actions, wifi bands (`wifi1` v
 ## Quick Setup
 
 Copy the following commands to your terminal to setup the configuration files.
+
+### 0. Check if GRC is Installed
+
+Before proceeding, verify that `grc` is installed on your system:
+
+    which grc
+
+If the command returns a path (e.g., `/usr/local/bin/grc`), `grc` is already installed. If no output appears, install `grc` using your package manager:
+
+**macOS (Homebrew):**
+
+    brew install grc
+
+**Linux (Ubuntu/Debian):**
+
+    sudo apt-get install grc
+
+**Linux (Fedora/RHEL):**
+
+    sudo yum install grc
+
+**Windows (WSL or Cygwin):**
+
+If you're using Windows, `grc` can be installed through Windows Subsystem for Linux (WSL) or Cygwin. Install Ubuntu/Debian on WSL and run the Linux installation commands above.
 
 ### 1. Append Mapping Location to `/etc/grc.conf`
 
