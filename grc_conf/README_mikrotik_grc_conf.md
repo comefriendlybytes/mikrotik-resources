@@ -46,6 +46,8 @@ If the command returns a path (e.g., `/usr/local/bin/grc`), `grc` is already ins
 
 If you're using Windows, `grc` can be installed through Windows Subsystem for Linux (WSL) or Cygwin. Install Ubuntu/Debian on WSL and run the Linux installation commands above.
 
+---
+
 ### 1. Append Mapping Location to `/etc/grc.conf`
 
   
