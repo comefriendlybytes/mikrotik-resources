@@ -22,6 +22,8 @@ It highlights hostnames, IP/MAC addresses, severe actions, wifi bands (`wifi1` v
 
 Copy the following commands to your terminal to setup the configuration files.
 
+---
+
 ### 0. Check if GRC is Installed
 
 Before proceeding, verify that `grc` is installed on your system:
