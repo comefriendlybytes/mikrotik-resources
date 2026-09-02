@@ -191,11 +191,8 @@ Copy the following commands to your terminal to setup the configuration files.
 
 ## Test via Terminal Echo
 
-  
-
 	echo "2026-09-01T16:50:56+01:00 xxxx-router wireless,info AE:B9:B1@wifi1(MikroTik-) roamed to AE:B9:B1@wifi2(MikroTik-), signal strength -76" | grc -c conf.mikrotik cat
 
-  
 
 # Tail Live Logs
 
