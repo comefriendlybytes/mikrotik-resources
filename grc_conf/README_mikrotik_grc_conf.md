@@ -67,7 +67,7 @@ Choose one of the following configurations:
 - **2.a Simple** (Topics only, minimal colorization) - Best for quick at-a-glance filtering
 - **2.b Advanced** (Detailed event types, comprehensive) - Full rainbow
 
-#### 2.a Create Simple Mapping (Topics Only) /usr/share/grc/[conf.mikrotik.simple](conf.mikrotik)
+#### 2.a Create Simple Mapping (Topics Only) /usr/share/grc/[conf.mikrotik](conf.mikrotik.simple)
 
     # MikroTik RouterOS Log Configuration for GRC - SIMPLE VERSION
     # Topic-based coloring by severity
