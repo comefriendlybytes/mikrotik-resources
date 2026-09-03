@@ -60,7 +60,40 @@ If you're using Windows, `grc` can be installed through Windows Subsystem for Li
 
         conf.mikrotik
 
-### 2. Create Mapping /usr/share/grc/[conf.mikrotik](conf.mikrotik)
+### 2.a Create Simple Mapping (Topics Only) /usr/share/grc/[conf.mikrotik.simple](conf.mikrotik)
+
+    # MikroTik RouterOS Log Configuration for GRC - SIMPLE VERSION
+    # Topic-based coloring by severity
+
+    # Red - Critical Keywords & Topics
+    regexp=\b(error|critical|failed|failure|firewall|ipsec|account|certificate)\b
+    colors=bold red
+    -
+
+    # Yellow - Important Topics
+    regexp=\b(bgp|route|interface|ppp|warning|user)\b
+    colors=bold yellow
+    -
+
+    # Cyan - System Topics
+    regexp=\b(info|system|dhcp|dns|queue|wireless)\b
+    colors=cyan
+    -
+
+    # Green - Operational Topics
+    regexp=\b(script|fetch)\b
+    colors=green
+    -
+
+    # Purple - Debug
+    regexp=\b(debug|trace)\b
+    colors=bold magenta
+    -
+
+
+
+
+### 2.b Create Mapping 🌈 /usr/share/grc/[conf.mikrotik](conf.mikrotik)
     
       
 
@@ -223,7 +256,7 @@ If you're using Windows, `grc` can be installed through Windows Subsystem for Li
 
 ## Test via Terminal Echo
 
-	echo "2026-09-01T16:50:56+01:00 xxxx-router wireless,info AE:B9:B1@wifi1(MikroTik-) roamed to AE:B9:B1@wifi2(MikroTik-), signal strength -76" | grc -c conf.mikrotik cat
+	echo "2026-09-01T16:50:56+01:00 xxxx-router wireless,info AE:B9:B1:00:00:00@wifi1(MikroTik-xxxx) roamed to AE:B9:B1:00:00:00@wifi2(MikroTik-xxxx), signal strength -76" | grc -c conf.mikrotik cat
 
 
 # Tail Live Logs

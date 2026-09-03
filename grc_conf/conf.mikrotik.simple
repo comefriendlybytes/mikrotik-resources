@@ -1,0 +1,28 @@
+# MikroTik RouterOS Log Configuration for GRC - SIMPLE VERSION
+# Topic-based coloring by severity
+
+# Red - Critical Keywords & Topics
+regexp=\b(error|critical|failed|failure|firewall|ipsec|account|certificate)\b
+colors=bold red
+-
+
+# Yellow - Important Topics
+regexp=\b(bgp|route|interface|ppp|warning|user)\b
+colors=bold yellow
+-
+
+# Cyan - System Topics
+regexp=\b(info|system|dhcp|dns|queue|wireless)\b
+colors=cyan
+-
+
+# Green - Operational Topics
+regexp=\b(script|fetch)\b
+colors=green
+-
+
+# Purple - Debug
+regexp=\b(debug|trace)\b
+colors=bold magenta
+-
+
