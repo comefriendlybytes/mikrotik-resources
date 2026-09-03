@@ -60,7 +60,14 @@ If you're using Windows, `grc` can be installed through Windows Subsystem for Li
 
         conf.mikrotik
 
-### 2.a Create Simple Mapping (Topics Only) /usr/share/grc/[conf.mikrotik.simple](conf.mikrotik)
+### 2. Create Mapping in /usr/share/grc/
+
+Choose one of the following configurations:
+
+- **2.a Simple** (Topics only, minimal colorization) - Best for quick at-a-glance filtering
+- **2.b Advanced** (Detailed event types, comprehensive) - Full rainbow
+
+#### 2.a Create Simple Mapping (Topics Only) /usr/share/grc/[conf.mikrotik.simple](conf.mikrotik)
 
     # MikroTik RouterOS Log Configuration for GRC - SIMPLE VERSION
     # Topic-based coloring by severity
@@ -92,8 +99,7 @@ If you're using Windows, `grc` can be installed through Windows Subsystem for Li
 
 
 
-
-### 2.b Create Mapping 🌈 /usr/share/grc/[conf.mikrotik](conf.mikrotik)
+#### 2.b Create Advanced Mapping (🌈🌈🌈) /usr/share/grc/[conf.mikrotik](conf.mikrotik)
     
       
 
